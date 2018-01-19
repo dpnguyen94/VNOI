@@ -1,0 +1,2 @@
+var a:array[1..1000,1..1000]of longint;i,j,b,k,n,x,y:longint;begin readln(n,k);for i:=1 to n do begin for j:=1to n do read(a[i,j]);readln;end;for i:=1to k do begin readln(b);x:=1;y:=n;while a[x,y]<>b do if b<a[x,y]then dec(y)else inc(x);
+writeln(x,' ',y);end;end.

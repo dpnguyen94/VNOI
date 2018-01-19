@@ -1,0 +1,1 @@
+var n,r,i:longint;begin read(n);r:=1;for i:=2to n do r:=r xor i;write(r);end.
